@@ -14,6 +14,12 @@ import java.util.TreeSet;
  * Created by cchingwenje on 2015-08-23.
  */
 public class ProcessUsersAndFollowers{
+    /**
+     *
+     * @param usersFile
+     * @return HashBasedTable containing user, followers and user tweets
+     * @comment
+     */
     public static HashBasedTable<User, Set<User>, ArrayList<Tweet>> getUserAndFollowersFromFile(File usersFile) {
         System.out.println("ProcessUsersAndFollowers.getUserAndFollowersFromFile()");
         BufferedReader br = null;
