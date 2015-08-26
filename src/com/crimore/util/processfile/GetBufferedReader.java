@@ -1,10 +1,12 @@
-package com.allangray.util.processfile;
+package com.crimore.util.processfile;
 
 import java.io.*;
 
 /**
  * Created by cchingwenje on 2015-08-23.
  */
+
+@Deprecated
 public class GetBufferedReader {
     /**
      *
@@ -28,6 +30,7 @@ public class GetBufferedReader {
             try {
                 if (br != null) br.close();
             } catch (Exception ex) {
+                ex.printStackTrace();
             }
         }
         return br;
