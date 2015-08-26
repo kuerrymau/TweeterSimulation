@@ -37,7 +37,7 @@ public class UserAndTweets {
                 line = line.trim();
                 int indexOfGreaterSign = line.indexOf(">");
                 nameOfTweetOwner = line.substring(0, indexOfGreaterSign).trim(); // nameOfTweetOwner = substring to ">"
-                tweetString = line.substring(indexOfGreaterSign + 2, line.length()); // tweetString = substring from ">" to enf of line
+                tweetString = line.substring(indexOfGreaterSign + 2, line.length()); // tweetString = substring from ">" to end of line
 
                 if (tweetString.length() > 140) { // check if tweet is longer than 140 chars
                     System.err.println("Please supply a tweet that is <= 140 characters");
