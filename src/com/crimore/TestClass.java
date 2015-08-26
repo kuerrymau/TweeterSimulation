@@ -3,7 +3,7 @@ package com.crimore;
 import com.crimore.util.processfile.UserAndTweets;
 import com.crimore.util.processfile.UsersAndFollowers;
 import com.crimore.util.processfile.process.ProcessUsersFollowersAndTweets;
-import org.junit.Test;
+//import org.junit.Test;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -12,9 +12,10 @@ import java.util.List;
 /**
  * Created by cchingwenje on 2015-08-23.
  */
-@Deprecated
+@Deprecated // not used
 public class TestClass {
-    @Test
+
+//    @Test
     public void canViewUserAndFollowers() {
         ProcessUsersFollowersAndTweets.processUsersFollowersAndTweets(UsersAndFollowers.
                                                                               createUserAccountsAndFollowers(getInputFiles().get(0)),

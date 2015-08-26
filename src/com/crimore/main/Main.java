@@ -7,7 +7,10 @@ import com.crimore.util.processfile.process.ProcessUsersFollowersAndTweets;
 import java.io.File;
 
 public class Main {
-
+    /**
+     * @comment gets files from command line or "IDE" arguments
+     * @param args
+     */
     public static void main(String[] args) {
         if (args.length < 1) {
             System.err.println("Please supply a users file and a tweets file:" + args.length);

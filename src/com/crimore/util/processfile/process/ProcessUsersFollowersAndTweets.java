@@ -15,7 +15,7 @@ public class ProcessUsersFollowersAndTweets {
      * @param userAccountsAndFollowers
      * @param tweets
      * @return HashBasedTable<UserAccount, Set<UserAccount>, ArrayList<Tweet>>
-     * @comment creates final store of users, followers and the tweets
+     * @comment creates final store of users, followers and the tweets and print to stdout
      */
     public static void processUsersFollowersAndTweets(Set<UserAccount> userAccountsAndFollowers,
                                                       ArrayList<Tweet> tweets) {

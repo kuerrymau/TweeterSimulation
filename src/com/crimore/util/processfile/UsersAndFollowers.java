@@ -4,7 +4,6 @@ import com.crimore.domain.UserAccount;
 
 import java.io.*;
 import java.nio.charset.Charset;
-import java.nio.charset.CharsetDecoder;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -38,7 +37,7 @@ public class UsersAndFollowers {
 
                 userFollowingSomeUserAccount.setName(nameOfUserFollowingSomeUser);
 
-                listOfFollowedUsers = line.substring(indexOfFollows + 7); // get list as string eg "Martin,Alan"
+                listOfFollowedUsers = line.substring(indexOfFollows + 7); // get users being followed list as string eg "Martin,Alan"
 
                 String[] arrayOfFollowedUsers = null;
                 if (listOfFollowedUsers.indexOf(",") != -1) {
@@ -65,7 +64,7 @@ public class UsersAndFollowers {
                     listOfUserAccountsBeingFollowed.add(userBeingFollowed);
                 }
 
-                listOfUserAccountsBeingFollowed.add(userFollowingSomeUserAccount); // add follower as a user
+                listOfUserAccountsBeingFollowed.add(userFollowingSomeUserAccount); // add userFollowingSomeUserAccount to user (accounts)
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
